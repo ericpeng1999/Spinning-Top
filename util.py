@@ -16,7 +16,7 @@ def Dfunc(t,Y,params):
     def kick(t):
         tperiod = 0.5
         if t/tperiod > 1 and t % tperiod < 0.01:
-            kick = 1
+            kick = 1 # can be changed to other value to apply a short term kick in the vertical direction. Notice the amount is affected by the solver resolution dt.
         else:
             kick = 1
         return kick
